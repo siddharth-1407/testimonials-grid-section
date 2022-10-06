@@ -26,7 +26,6 @@ main {
 }
 @media (min-width: 1200px) {
   main {
-    max-width: 75vw;
     grid-template-columns: repeat(4, 16.5625em);
     gap: 2em;
   }
@@ -97,12 +96,12 @@ main {
   background-image: url(./images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right 1.3em;
-  grid-area: 1/span 2;
 }
 @media (min-width: 1200px) {
   .first {
     background-position: top right 5.5em;
     background-size: 21%;
+    grid-area: 1/span 2;
   }
 }
 .first img {
@@ -111,21 +110,33 @@ main {
 
 .second {
   background-color: hsl(217deg, 19%, 35%);
-  grid-area: 2 3;
+}
+@media (min-width: 1200px) {
+  .second {
+    grid-area: 2 3;
+  }
 }
 
 .third {
   background-color: hsl(0deg, 0%, 100%);
-  grid-row-start: 2;
-  grid-row-end: 3;
+}
+@media (min-width: 1200px) {
+  .third {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .fourth {
   background-color: hsl(219deg, 29%, 14%);
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 4;
+}
+@media (min-width: 1200px) {
+  .fourth {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 }
 .fourth img {
   outline: 2px solid hsl(263deg, 55%, 52%);
@@ -133,9 +144,13 @@ main {
 
 .fifth {
   background-color: hsl(0deg, 0%, 100%);
-  grid-column-start: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
+}
+@media (min-width: 1200px) {
+  .fifth {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 footer {
